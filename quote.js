@@ -5,3 +5,7 @@ function newQuote() {
     document.getElementById('quote-content').innerHTML = quotes[randomNumber]; 
 }
 
+$('#tweet-button').click(function(){
+    var quoteContent = document.getElementById('quote-content').innerHTML; 
+    $('a').attr('href','https://twitter.com/intent/tweet?text=' + quoteContent); 
+}); 

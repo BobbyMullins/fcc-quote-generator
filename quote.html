@@ -1,6 +1,7 @@
 <!DOCTYPE = html>
-<html>
+<html lang='en'>
 <head>
+    <meta name="viewport" content="width=device-width, initial- scale=1">
     <title>Quote Generator</title>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -20,8 +21,17 @@
         <p id="quote-content" class='text-center'></p>
 
         <div class='container text-center'>
+            <!-- Quote Button -->
             <button id="quote-button" onclick='newQuote()' class='btn btn-primary btn-lg'>Generate a Quote</button>
         </div>
+        <div class='container text-center'>
+            <!-- Tweet Button -->
+            <button id='tweet-button' class='btn btn-primary btn-lg'>
+                <a class="twitter-share-button"
+                href=''>
+                Tweet</a>
+            </button>
+        </div>    
     </div>
     
     <!-- jQuery -->
